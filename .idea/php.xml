@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="localhost" id="e3ed7cbe-3663-4273-9c87-7f616ee987bb" name="localhost" port="9000">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/app/views/pages" remote-root="C:/xampp/htdocs" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
+</project>
