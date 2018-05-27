@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6 mx-auto">
             <div class="card card-body bg-light mt-5">
-                <h3>Join RocketChat</h3>
+                <h4>Join LightningChat</h4>
                 <form action="<?= URL_ROOT . '/users/register'; ?>" method="POST" id="register-form" class="mt-3">
                     <div class="form-group">
                         <label for="register-name">Name</label>

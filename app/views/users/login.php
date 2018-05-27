@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6 mx-auto">
             <div class="card card-body bg-light mt-5">
-                <h3>Login to RocketChat</h3>
+                <h4>Login to LightningChat</h4>
                 <form action="<?= URL_ROOT . '/users/login'; ?>" method="POST" id="login-form"class="mt-3">
                     <div class="form-group">
                         <label for="register-email">Email</label>
