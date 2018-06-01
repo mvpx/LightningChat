@@ -33,7 +33,7 @@ class Messages extends Controller {
 
             $data = [
                 'user_id' => $_SESSION['user_id'],
-                'message' => trim($_POST['message'])
+                'message' => $_POST['message']
             ];
 
             $this->message->postMessage($data);

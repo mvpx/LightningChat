@@ -15,7 +15,7 @@
                 <div class="card card-body bg-light mt-3">
                     <form id="post-form">
                         <div class="form-group">
-                            <label for="message">Message:</label>
+                            <label for="post-message">Message:</label>
                             <textarea id="post-message" class="form-control" name="message" rows="5"></textarea>
                         </div>
                         <div class="form-group">
@@ -29,7 +29,7 @@
 
     <script>
     
-        const loadMessages = () => {
+        const showMessages = () => {
             const request = new XMLHttpRequest();
             request.open('GET', '<?= URL_ROOT . '/messages/index'; ?>', true);
             request.onload = () => {
@@ -45,10 +45,11 @@
             request.send();
         }
 
-        document.querySelector('#post-form').addEventListener('submit', (e) => {
+        showMessages();
+        setInterval(() => { showMessages(); }, 2000);
 
+        document.querySelector('#post-form').addEventListener('submit', () => {
             const message = 'message=' + document.querySelector('#post-message').value;
-
             const request = new XMLHttpRequest;
             request.open('POST', '<?= URL_ROOT . '/messages/post'; ?>', true);
             request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
@@ -59,8 +60,6 @@
             };
             request.send(message);
         });
-
-        setInterval(() => { loadMessages(); }, 2000);
 
     </script>
 
